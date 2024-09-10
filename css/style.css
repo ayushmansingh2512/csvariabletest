@@ -1,0 +1,76 @@
+ /* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+:root{
+    --base-color:#121212;
+    --base-varient:#1c1f2b;
+    --text-color:#ffffff;
+    --secondary-text:#666;
+}
+.lightmode{
+    --base-color:#ffffff;
+    --base-varient:#ebedf4;
+    --text-color:#121212;
+    --secondary-text:#666;
+}
+
+
+body {
+    background-color:var(--base-color);
+    color: var(--text-color);
+    padding: 0;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "navbar navbar"
+    "sidebar main"
+    "sidebar footer";
+    justify-content: center; 
+    
+    
+}
+
+html {
+    font-family: sans-serif;
+}
+
+ 
+
+
+#theme-switch{
+    max-width: 1300px;
+    width: 1300px;
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--base-varient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 30px;
+    right: 22%;
+    border: none;
+    cursor: pointer;
+}
+
+#theme-switch svg{
+    fill: var(--text-color) ;
+}
+
+#theme-switch svg:first-child{
+    display: none;
+}
+ 
+.lightmode #theme-switch svg:last-child{
+    display: none;
+}
+.lightmode #theme-switch svg:first-child{
+    display: block;
+}

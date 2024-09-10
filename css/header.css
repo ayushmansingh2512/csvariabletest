@@ -1,0 +1,95 @@
+
+.co-1 {
+    margin-top: 40px;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+ 
+    
+}
+
+.heading2{
+    color:var(--secondary-text);
+    font-size: 30  px;
+
+}
+
+/* Header Styles */
+header h1 {
+    position: relative;
+    width: max-content;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+header h1::after {
+    content: ''; 
+    background: linear-gradient(to right, #3b82f6, #ec4899);
+    border-radius: 100px;
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+header h1:hover::after {
+    width: 770px;
+}
+
+/* Main Section Styles */
+main section {
+    text-align: start;
+}
+
+main section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+.color-button {
+    margin-top: 24px;
+    position: relative;
+    padding: 10px;
+    width: max-content;
+    color:var(--text-color);
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 1rem;
+    transition: color 0.3s;
+    font-weight: 700;
+    border-radius: 50px;
+   
+    border: 1px solid var(--secondary-text);
+
+}
+
+ 
+
+.color-button::before {
+    content: ""; 
+    background: linear-gradient(to right, #3b82f6, #ec4899);
+    position: absolute;
+    width: 0;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.3s;
+    border-radius: 50px;
+}
+
+.color-button:hover::before {
+    width: 100%;
+}
+
+button:hover {
+    color:var(--text-color);
+}
